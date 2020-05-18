@@ -9,4 +9,7 @@ it asks you to update the script, answer with `y` to get the latest version.
 
 I tested it with ubuntu xenial and bionic, it should support newer debian version too.
 
+I won't update the script on GitHub everytime so make sure you download the newest version through the script itself,
+I should say this is my first script I made. As I said it was made ofrom boredom and lazyness.
+
 
