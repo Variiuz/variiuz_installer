@@ -1,13 +1,13 @@
 #!/bin/bash
 # Script github.com/variiuz
-# Version v1.3
+# Version v1.4
 # Author Variiuz
 if [ -z "$BASH_VERSION" ]
 then
     exec bash "$0" "$@"
 fi
 CMD="${0//.\/}"
-VERSION="v1.3"
+VERSION="v1.4"
 WORKDIR="$(pwd)"
 function check_updates {
 echo "Checking for Update..."
