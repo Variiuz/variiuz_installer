@@ -1,13 +1,13 @@
 #!/bin/bash
 # Script github.com/variiuz
-# Version v1.4
+# Version v1.4.1
 # Author Variiuz
 if [ -z "$BASH_VERSION" ]
 then
     exec bash "$0" "$@"
 fi
 CMD="${0//.\/}"
-VERSION="v1.4"
+VERSION="v1.4.1"
 WORKDIR="$(pwd)"
 function check_updates {
 echo "Checking for Update..."
@@ -433,7 +433,7 @@ function show_menu {
 		#echo "PLEASE NOTE: This script is just for installing the server NOT maintaining/managing it!"
 		#read -n 1 -s -r -p "Press any key to confirm or use CTRL^C to quit"
 		#install_mc $mc_version $mc_ram $mc_screen $mc_port
-		;;
+		#;;
 	2)
 		clear
 		echo "=================="
