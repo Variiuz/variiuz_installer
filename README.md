@@ -5,7 +5,13 @@ It has an auto-updater so you should be fine either downloading this or do
 ```bash
  wget https://cdn.alex-is-a.ninja/share/variiuz_installer.sh
 ```
-it asks you to update the script, answer with `y` to get the latest version.
+if it asks you to update the script, answer with `y` to get the latest version.
+
+Make sure to give it permissions with
+
+```bash
+ chmod +x variiuz_installer.sh
+```
 
 I tested it with ubuntu xenial and bionic, it should support newer debian version too.
 
