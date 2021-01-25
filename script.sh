@@ -413,27 +413,23 @@ function show_menu {
 	case $select in
 	1)
 		show_mc
-		echo "Currently unavailable, due to issues with the mirrior."
-		clear
-		show_menu
+		echo "Please select the version and give some information."
+		echo "Visit https://cdn.alex-is-a.ninja/share/minecraft_versions.txt for a list of supported Versions."
+		read -p 'Version: ' mc_version
+		read -p 'Memory in GB: ' mc_ram
+		read -p 'Screenname: ' mc_screen
+		read -p 'Port: ' mc_port
+		echo "Thanks, installing will continue after confirmation."
+		show_mc
+		echo "Please confirm these settings:"
+		echo "Version: $mc_version"
+		echo "Memory: $mc_ram GB"
+		echo "Screenname: $mc_screen"
+		echo "Port: $mc_port"
+		echo "PLEASE NOTE: This script is just for installing the server NOT maintaining/managing it!"
+		read -n 1 -s -r -p "Press any key to confirm or use CTRL^C to quit"
+		install_mc $mc_version $mc_ram $mc_screen $mc_port
 		;;
-		#echo "Please select the version and give some information."
-		#echo "Visit https://cdn.alex-is-a.ninja/share/minecraft_versions.txt for a list of supported Versions."
-		#read -p 'Version: ' mc_version
-		#read -p 'Memory in GB: ' mc_ram
-		#read -p 'Screenname: ' mc_screen
-		#read -p 'Port: ' mc_port
-		#echo "Thanks, installing will continue after confirmation."
-		#show_mc
-		#echo "Please confirm these settings:"
-		#echo "Version: $mc_version"
-		#echo "Memory: $mc_ram GB"
-		#echo "Screenname: $mc_screen"
-		#echo "Port: $mc_port"
-		#echo "PLEASE NOTE: This script is just for installing the server NOT maintaining/managing it!"
-		#read -n 1 -s -r -p "Press any key to confirm or use CTRL^C to quit"
-		#install_mc $mc_version $mc_ram $mc_screen $mc_port
-		#;;
 	2)
 		clear
 		echo "=================="
