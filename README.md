@@ -3,7 +3,7 @@ Small script i wrote for fun and because I was to lazy to just install a Minecra
 
 It has an auto-updater so you should be fine either downloading this or do
 ```bash
- wget https://cdn.alex-is-a.ninja/share/variiuz_installer.sh
+ wget https://cdn.alex-needs.space/share/variiuz_installer.sh
 ```
 if it asks you to update the script, answer with `y` to get the latest version.
 
