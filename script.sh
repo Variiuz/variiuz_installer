@@ -11,7 +11,7 @@ VERSION="v1.4.1"
 WORKDIR="$(pwd)"
 function check_updates {
 echo "Checking for Update..."
-	checked=$(curl -s https://cdn.alex-is-a.ninja/share/version_inst)
+	checked=$(curl -s https://cdn.alex-needs.space/share/version_inst)
 	if [ $checked != $VERSION ]
 	then
 		read -p 'New Version available! Download now? y/n ' answer
@@ -20,7 +20,7 @@ echo "Checking for Update..."
 			show_menu "!!! Update available! Newer Version: $checked !!!"
 		else
 			echo "Updating from $VERSION to ${checked}..."
-			curl -s -o ./$CMD "https://cdn.alex-is-a.ninja/share/variiuz_installer.sh"
+			curl -s -o ./$CMD "https://cdn.alex-needs.space/share/variiuz_installer.sh"
 			exit 0
 		fi
 	fi
@@ -28,7 +28,7 @@ echo "Checking for Update..."
 }
 function check_changelog {
 	echo "Checking for Changelog..."
-	checked=$(curl -s https://cdn.alex-is-a.ninja/share/changelog)
+	checked=$(curl -s https://cdn.alex-needs.space/share/changelog)
 	IFS=';' read -r -a array <<< "$checked"
 	for element in "${array[@]}"
 	do
@@ -414,7 +414,7 @@ function show_menu {
 	1)
 		show_mc
 		echo "Please select the version and give some information."
-		echo "Visit https://cdn.alex-is-a.ninja/share/minecraft_versions.txt for a list of supported Versions."
+		echo "Visit https://cdn.alex-needs.space/share/minecraft_versions.txt for a list of supported Versions."
 		read -p 'Version: ' mc_version
 		read -p 'Memory in GB: ' mc_ram
 		read -p 'Screenname: ' mc_screen
